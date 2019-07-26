@@ -9,7 +9,7 @@ cd TA2019
 //specify path to start mongoose server by editing mongoServer.sh
 
 vim mongoServer.sh
-mongod -dbpath <YOUR Path>/TA2019/db/data
+mongod -dbpath <YOUR Path>/TA209/db/data
 
 //Start the mongoose server by running the script
 
