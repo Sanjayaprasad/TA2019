@@ -1,8 +1,8 @@
 // Clone the project using the below url
 
-git clone https://github.com/Sanjayaprasad/ShoppingCart.git
+git clone https://github.com/Sanjayaprasad/TA2019.git
 
-//Change the directory to ShoppingCart
+//Change the directory to TA2019
 
 cd ShoppingCart
 
