@@ -4,7 +4,7 @@ git clone https://github.com/Sanjayaprasad/TA2019.git
 
 //Change the directory to TA2019
 
-cd ShoppingCart
+cd TA2019
 
 //specify path to start mongoose server by editing mongoServer.sh
 
