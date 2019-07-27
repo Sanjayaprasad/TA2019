@@ -13,7 +13,7 @@ describe('ShoppingCart home page', function(){
 		browser.get('http://localhost:3000/');
 	});
 
-	it('Should display the home page', function(){
+/*	it('Should display the home page', function(){
 		expect(browser.getTitle()).toEqual('Shopping-cart-submit-production');
 	});
 
@@ -34,7 +34,7 @@ describe('ShoppingCart home page', function(){
 		console.log("should Return an error message");
 		expect(element(by.css('.message')).isDisplayed()).toBe(true);
 		browser.sleep(1000);
-	});
+	});*/
 
 	it('should calculate total price when quantity is 1', function(){
 		var itemqty = 1;
@@ -50,7 +50,7 @@ describe('ShoppingCart home page', function(){
 		browser.sleep(1000);
 	});
 
-	it('should calculate total price when quantity is 2', function(){
+	/*it('should calculate total price when quantity is 2', function(){
 		var itemqty = 2;
 		element(by.model('item_ItemName')).sendKeys(itemname);
 		element(by.id('singleitem')).click();
@@ -76,7 +76,7 @@ describe('ShoppingCart home page', function(){
 		console.log(actualResult);
 		expect(totalResult.getText()).toEqual(actualResult);
 		browser.sleep(1000);
-	});
+	});*/
 
 	it('Should display a error message if quantity is not available', function(){
 		var itemqty = 34;
@@ -89,7 +89,7 @@ describe('ShoppingCart home page', function(){
 		browser.sleep(1000);
 	});
 
-	it('should clear all the fields if CLEAR button is clicked', function(){
+	/*it('should clear all the fields if CLEAR button is clicked', function(){
 		var itemqty = 5;
 		element(by.model('item_ItemName')).sendKeys(itemname);
 		element(by.id('singleitem')).click();
@@ -113,9 +113,9 @@ describe('ShoppingCart home page', function(){
 		expect(result.getText()).toEqual("500");
 		expect($('[ng-show=IsVisible]').isDisplayed()).toBeTruthy();
 		browser.sleep(1000);
-	});
+	});*/
 
-/*	it('should navigate to "UserDetails" only when the totalprice is dispalyed', function(){
+	it('should navigate to "UserDetails" only when the totalprice is dispalyed', function(){
 		var itemqty = 2;
 		element(by.model('item_ItemName')).sendKeys(itemname);
 		element(by.id('singleitem')).click();
@@ -134,12 +134,13 @@ describe('ShoppingCart home page', function(){
 		element(by.model('form.user_Address')).sendKeys(useraddress);
 		element(by.id('btncontinue')).click();
 		expect(browser.getCurrentUrl()).toEqual('http://localhost:3000/#!/checkout');
+		element(by.id('check')).click();
 		element(by.id('btnsubmit')).click();
 		expect(browser.getCurrentUrl()).toEqual('http://localhost:3000/#!/shippingConformation')
 		browser.sleep(1000);
-	});*/
+	});
 
-	it('buy now button should be disabled if totalprice is equal to " "', function(){
+/*	it('buy now button should be disabled if totalprice is equal to " "', function(){
 		var itemqty = 2;
 		element(by.model('item_ItemName')).sendKeys(itemname);
 		element(by.id('singleitem')).click();
@@ -148,6 +149,6 @@ describe('ShoppingCart home page', function(){
 		element(by.id('myButton')).click();
 		expect(element(by.css('.home-page')).getAttribute('disabled')).toBeFalsy();
 		browser.sleep(1000);
-	});
+	});*/
 
 });
